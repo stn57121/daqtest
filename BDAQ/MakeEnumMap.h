@@ -1,0 +1,83 @@
+#ifndef INC_MakeEnumMap
+#define INC_MakeEnumMap
+
+#include "EnumMap.h"
+
+EnumMap MakeEnumMap_HV();
+EnumMap MakeEnumMap_RC();
+EnumMap MakeEnumMap_ONOFF();
+EnumMap MakeEnumMap(std::string str);
+
+#endif
+
+//enum class State_HV {
+//	OFF=2,
+//	STABLE=11,
+//	STANDBY=12,
+//	SHOULDER=13,
+//	PEAK=14,
+//	TRANSITION=31,
+//	RAMPINGUP=32,
+//	RAMPINGDOWN=33,
+//	TURNINGON=35,
+//	TURNINGOFF=36,
+//	ERROR=41,
+//	TRIP=42,
+//	OVER_CURRENT=43, 
+//	OVER_VOLTAGE=44,
+//	INTERLOCK=45,
+//	MASKED=50
+//};
+//
+//enum class State_RC {
+//	OFF=1,
+//	NOTREADY=2,
+//	READY=3,
+//	RUNNING=4,
+//	PAUSED=5,
+//	LOADING=6,
+//	STARTING=7,
+//	STOPPING=8,
+//	CONFIGURING=9,
+//	ERROR=10,
+//	FATAL=11,
+//	RECOVERING=12,
+//	ABORTING=13,
+//	BOOTING=14
+//};
+
+//enum class State_HV {
+//	OFF(2, "OFF"),
+//	STABLE(11, "STABLE"),
+//	STANDBY(12, "STANDBY"),
+//	SHOULDER(13, "SHOULDER"),
+//	PEAK(14, "PEAK"),
+//	TRANSITION(31, "TRANSITION"),
+//	RAMPINGUP(32, "RAMPINGUP"),
+//	RAMPINGDOWN(33, "RAMPINGDOWN"),
+//	TURNINGON(35, "TURNINGON"),
+//	TURNINGOFF(36, "TURNINGOFF"),
+//	ERROR(41, "ERROR"),
+//	TRIP(42, "TRIP")
+//	OVER_CURRENT(43, "OVER_CURRENT"),
+//	OVER_VOLTAGE(44, "OVER_VOLTAGE"),
+//	INTERLOCK(45, "INTERLOCK"),
+//	MASKED(50, "MASKED")
+//};
+
+//enum class State_RC {
+//	OFF(1, "OFF"),
+//	NOTREADY(2, "NOTREADY"),
+//	READY(3, "READY"),
+//	RUNNING(4, "RUNNING"),
+//	PAUSED(5, "PAUSED"),
+//	LOADING(6, "LOADING"),
+//	STARTING(7, "STARTING"),
+//	STOPPING(8, "STOPPING"),
+//	CONFIGURING(9, "CONFIGURE"),
+//	ERROR(10, "ERROR"),
+//	FATAL(11, "FATAL"),
+//	RECOVERING(12, "RECOVERING"),
+//	ABORTING(13, "ABORTING"),
+//	BOOTING(14, "BOOTING")
+//};

@@ -1,0 +1,32 @@
+B2_nsm:get:HVMASTER:pxd:hvstate MASKED
+B2_nsm:get:HVMASTER:svd:hvstate STANDBY
+B2_nsm:get:HVMASTER:cdc:hvstate MASKED
+B2_nsm:get:HVMASTER:top:hvstate OFF
+B2_nsm:get:HVMASTER:arich:hvstate OFF
+B2_nsm:get:HVMASTER:bklm:hvstate OFF
+B2_nsm:get:HVMASTER:hvstate    OFF
+
+B2_nsm:get:HVMASTER:inj:cont:allow 1
+B2:DAQ:HVC:Inj:Conti:Allow     1
+B2_MDI:INJ:INJECTION:ENABLE    1
+SKB:B2_INJ:INJECTION:ENABLE    1
+
+B2_nsm:get:HVMASTER:inj:normal:allow 1
+B2:DAQ:HVC:Inj:Normal:Allow    1
+B2_MDI:INJ:NORMAL:ENABLE       1
+SKB:B2_INJ:NORMAL:ENABLE       1
+
+B2_MDI:PHYSICS_READY           0
+SKB:CG_OPR:PHYSICS_READY       0
+
+B2:DAQ:LRC:Running             0
+B2_nsm:get:LOCALRC:running     0
+B2_nsm:get:LOCALRC:rcstate     ERROR
+
+B2_nsm:get:RUNCONTROL:pxd:rcstate OFF
+B2_nsm:get:RUNCONTROL:svd:rcstate RUNNING
+B2_nsm:get:RUNCONTROL:cdc:rcstate OFF
+B2_nsm:get:RUNCONTROL:top:rcstate OFF
+B2_nsm:get:RUNCONTROL:arich:rcstate RUNNING
+B2_nsm:get:RUNCONTROL:ecl:rcstate RUNNING
+B2_nsm:get:RUNCONTROL:klm:rcstate RUNNING
