@@ -159,6 +159,7 @@
     <ClCompile Include="MakeEnumMap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="filelist.txt" />
     <Text Include="log_20180503_161607" />
     <Text Include="log_20180512_131654" />
     <Text Include="log_20180512_235911" />
