@@ -59,9 +59,6 @@
     <Text Include="log_20180512_131654">
       <Filter>リソース ファイル</Filter>
     </Text>
-    <Text Include="filelist.txt">
-      <Filter>リソース ファイル</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
