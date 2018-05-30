@@ -47,9 +47,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="filelist.txt">
-      <Filter>リソース ファイル</Filter>
-    </Text>
     <Text Include="log_20180503_161607">
       <Filter>リソース ファイル</Filter>
     </Text>
@@ -60,6 +57,9 @@
       <Filter>リソース ファイル</Filter>
     </Text>
     <Text Include="log_20180512_131654">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="filelist.txt">
       <Filter>リソース ファイル</Filter>
     </Text>
   </ItemGroup>
