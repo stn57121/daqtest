@@ -62,6 +62,7 @@
     <Text Include="log_20180512_171212">
       <Filter>リソース ファイル</Filter>
     </Text>
+    <Text Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
@@ -89,9 +90,6 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="read_node.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="test.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

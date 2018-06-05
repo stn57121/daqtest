@@ -164,6 +164,7 @@
     <Text Include="log_20180512_131654" />
     <Text Include="log_20180512_235911" />
     <Text Include="log_20180512_171212" />
+    <Text Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="check_int.h" />
@@ -175,7 +176,6 @@
     <ClInclude Include="read_node.h" />
     <ClInclude Include="SplitLine.h" />
     <ClInclude Include="MakeEnumMap.h" />
-    <ClInclude Include="test.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitattributes" />
