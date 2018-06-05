@@ -1,8 +1,8 @@
 #makefile for program
 
-CC	= gcc
+CC	= g++
 CFLAGS	= -Wall -02
-OBJS	= BDAQ.o check_int.o DeleteHeadSpace.o Enum.o EnumMap.o MakeEnumMap.o Node.o NodeType.o read_node.o Splitline.o
+OBJS	= BDAQ.o check_int.o DeleteHeadSpace.o Enum.o EnumMap.o MakeEnumMap.o Node.o NodeType.o read_node.o SplitLine.o
 PROGRAM	= readlog
 
 .SUFFIXES: .c .o
@@ -21,8 +21,8 @@ clean:
 	$(RM) $(PROGRAM) $(OBJS) depend.inc
 
 .PHONY: depend
-depend: $(OBJS:.o=.c)
+depend: $(OBJS:.o=.cpp)
 	-@ $(RM) depend.inc
-	-@ for i in $^; do cpp -MM $$i | sed "s/\ [_a-zA-Z0-9][_a-zA-Z0-9]*\.c//g" >> depend.inc; done
+	-@ for i in $^; do cpp -MM $$i | sed "s/\ [_a-zA-Z0-9][_a-zA-Z0-9]*\.cpp//g" >> depend.inc; done
 
 -include depend.inc
