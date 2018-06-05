@@ -24,8 +24,9 @@ int main() {
 		ss >> date;
 		ss.ignore(1);
 		ss >> time;
+		std::string test = "0";
 		std::cout << "Num of Nodes : " << nodes.size() << std::endl;
-		for (std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, Node> > > > itr = nodes.begin(); itr != nodes.end(); ++itr) {
+		for (std::map<std::string,Node>::iterator itr = nodes.begin(); itr != nodes.end(); ++itr) {
 			//std::cout << itr->first << "," << itr->second.getname() << "," << itr->second.getstate() << "," << itr->second.getid() << "," << itr->second.gettype() << std::endl;
 			std::string name = itr->second.getname();
 			std::string state = itr->second.getstate();
@@ -36,7 +37,7 @@ int main() {
 			ofs.open("./output/"+name+".txt", std::ios::app);
 			ofs << date << time << " " << id << std::endl;
 			ofs.close();
-			//std::cout << typeid(ss).name() << std::endl;
+			//std::cout << typeid(test).name() << std::endl;
 		}
 	}
 
