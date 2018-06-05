@@ -6,7 +6,6 @@
 #include "read_node.h"
 #include <iomanip>
 #include <algorithm>
-#include <typeinfo.h>
 
 int main() {
 	std::cout << "Hello, World." << std::endl;
