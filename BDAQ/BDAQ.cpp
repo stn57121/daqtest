@@ -42,13 +42,10 @@ int main() {
 	}
 
 	//std::map<std::string, Node> nodes = read_node(path);
-
 	//std::cout << "Num of Nodes : " << nodes.size() << std::endl;
 	//for (auto itr = nodes.begin(); itr != nodes.end(); ++itr) {
 	//	std::cout << itr->first << "," << itr->second.getname() << "," << itr->second.getstate() << "," << itr->second.getid() << "," << itr->second.gettype() << std::endl;
 	//}
-
-
 
     return 0;
 }
