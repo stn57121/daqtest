@@ -8,7 +8,7 @@
 
 std::map<std::string, Node> read_node(std::string path) {
 
-	std::ifstream ifs(path);
+	std::ifstream ifs(path.c_str());
 	std::map<std::string, Node> nodes;
 	if (ifs.fail()) {
 		std::cerr << "failed to open file : " << path << std::endl;
