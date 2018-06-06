@@ -10,7 +10,8 @@
 int main() {
 	std::cout << "Hello, World." << std::endl;
 
-	std::ifstream ifs("./filelist.txt");
+	std::string filelist = "./filelist.txt";
+	std::ifstream ifs(filelist.c_str());
 	std::ofstream ofs;
 	std::string line;
 
