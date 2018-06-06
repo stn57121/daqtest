@@ -34,7 +34,7 @@ int main() {
 			std::string type = itr->second.gettype();
 			//std::cout << itr->first << "," << name << "," << state << "," << id << "," << type << std::endl;
 			std::replace(name.begin(), name.end(), ':', '-');
-			ofs.open("./output/"+name+".txt", std::ios::app);
+			ofs.open(("./output/" + name + ".txt").c_str(), std::ios::app);
 			ofs << date << time << " " << id << std::endl;
 			ofs.close();
 			//std::cout << typeid(test).name() << std::endl;
