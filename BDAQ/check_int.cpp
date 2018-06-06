@@ -1,12 +1,20 @@
 #include <iostream>
+#include <cctype>
+#include <algorithm>
 #include "check_int.h"
 
 bool check_int(std::string str) {
-	try {
-		int n = std::stoi(str);
+	if (std::all_of(str.cbegin(), str.cend(), isdigit)) {
+		return true;
 	}
-	catch(...){
+	else {
 		return false;
 	}
+	//try {
+	//	int n = std::stoi(str);
+	//}
+	//catch(...){
+	//	return false;
+	//}
 	return true;
 }

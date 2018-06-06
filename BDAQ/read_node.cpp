@@ -26,7 +26,12 @@ std::map<std::string, Node> read_node(std::string path) {
 		//}
 		Node HVNode(v[0], NodeType(v[0]));
 		if (check_int(v[1])) {
-			HVNode.setid(std::stoi(v[1]));
+			//HVNode.setid(std::stoi(v[1]));
+			int v1;
+			std::stringstream ins;
+			ins << v[1];
+			ins >> v1;
+			HVNode.setid(v1);
 		}
 		else {
 			HVNode.setstate(v[1]);
