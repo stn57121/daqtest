@@ -25,7 +25,6 @@ int main() {
 		ss >> date;
 		ss.ignore(1);
 		ss >> time;
-		std::string test = "0";
 		std::cout << "Num of Nodes : " << nodes.size() << std::endl;
 		for (std::map<std::string,Node>::iterator itr = nodes.begin(); itr != nodes.end(); ++itr) {
 			//std::cout << itr->first << "," << itr->second.getname() << "," << itr->second.getstate() << "," << itr->second.getid() << "," << itr->second.gettype() << std::endl;
